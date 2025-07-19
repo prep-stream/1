@@ -1,106 +1,41 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light background color */
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f8ff; /* Light background color */
 }
 
-/* Hero Section (Header) */
-header {
-    background-image: url('https://www.example.com/interview-image.jpg');  /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1, p {
     text-align: center;
-    color: white;
-    position: relative;
-    z-index: 1;
 }
 
-header .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-nav ul {
-    list-style: none;
+/* Navbar Styles */
+.navbar {
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 10px;
+    background-color: #007BFF;
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
+.nav-item {
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.nav-item:hover {
+    background-color: #0056b3;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-/* Main Content Section */
-main {
-    padding: 2rem;
-    max-width: 1200px;
+/* Content Styles */
+.content {
+    padding: 30px;
+    max-width: 800px;
     margin: 0 auto;
-}
-
-section {
-    padding: 2rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-section p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Video Embedding */
-.video-container {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-iframe {
-    border-radius: 8px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 1rem;
 }
